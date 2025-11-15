@@ -1,0 +1,16 @@
+let peso = parseFloat(prompt(`Informe seu peso`))
+let altura = parseFloat(prompt(`Informe sua altura`))
+let imc = peso/(altura*altura)
+
+if(imc < 18.5)
+    alert(`Você esta abaixo do peso`)
+else if(imc >= 18.5 && imc < 24.9)
+    alert(`Você esta no peso ideal`)
+else if(imc >= 25 && imc < 29.9)
+    alert(`Você esta em sobrepeso`)
+else if(imc >= 30 && imc < 34.9)
+    alert(`Você esta em obesidade grau 1`)
+else if(imc >= 35 && imc < 39.9)
+    alert(`Você esta em obesidade grau 2`)
+else
+    alert(`Você esta obesidade grau 3 ou obesidade mórbida`)
